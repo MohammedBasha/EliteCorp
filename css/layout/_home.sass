@@ -1,0 +1,235 @@
+/* ============================================ *
+ * Start Styling the Home Page
+ * ============================================ */
+
+/* ============================================ *
+ * Start Styling the Main Slider Section
+ * ============================================ */
+
+.main-slider
+    overflow: hidden
+
+    .carousel-item
+        +background-size(cover)
+
+        &:nth-child(1)
+            background-image: url('../images/slider/slider-1.jpg')
+
+        &:nth-child(2)
+            background-image: url('../images/slider/slider-2.jpg')
+
+        &:nth-child(3)
+            background-image: url('../images/slider/slider-3.jpg')
+
+    .carousel-caption
+        +heading-two()
+
+        text-align: left
+        position: absolute
+        top: 20%
+        left: 10%
+        z-index: 2
+
+        .highlighted
+            background-color: $secondaryColor
+            padding: 3px 5px
+
+
+/* ============================================ *
+ * Start Styling the Features Section
+ * ============================================ */
+
+.features
+    padding: 100px 0 120px
+
+    .feature
+        i
+            background-color: $secondaryColor
+            color: $whiteColor
+            width: 60px
+            height: 60px
+            line-height: 60px
+            margin-bottom: 15px
+
+        h4
+            color: $primaryColor
+
+        p
+            color: #687074
+
+/* ============================================ *
+ * Start Styling the Overview Section
+ * ============================================ */
+
+.overview
+    padding: 110px 0
+    background-color: #f0f5f7
+
+    .overview-content
+        width: 60%
+        margin: auto
+
+        h2
+            +heading-two()
+
+        p
+            +paragraph()
+            margin-bottom: 30px
+
+        h6
+            font-size: 1.2rem
+            margin-bottom: 45px
+            letter-spacing: 2px
+
+        a
+            display: inline-block
+            background-color: $secondaryColor
+            color: $whiteColor
+            padding: 10px 30px
+            font-weight: bold
+
+
+/* ============================================ *
+ * Start Styling the Featured Work Section
+ * ============================================ */
+
+.featured-work
+    padding: 80px 0 40px
+
+    .featured-work-content
+        width: 65%
+        margin: 0 auto 60px
+
+        h2
+            +heading-two()
+
+        p
+            +paragraph()
+
+    .featured-filter
+        margin-bottom: 30px
+
+        & > div
+            font-size: .8rem
+            font-weight: bold
+            color: $primaryColor
+            line-height: 2.9rem
+
+            border: 1px solid $primaryColor
+            margin-right: 10px
+
+            cursor: pointer
+            transition: all .3s ease-in-out
+
+            &:last-child
+                margin-right: 0
+
+            &.active, &:hover
+                background-color: $secondaryColor
+                border-color: $secondaryColor
+                color: $whiteColor
+
+    .featured-image
+        position: relative
+        transition: all .3s ease-in-out
+
+        &:hover
+            .featured-overlay
+                visibility: visible
+
+        img
+            width: 100%
+
+/* ============================================ *
+ * Start Styling the Latest Posts Section
+ * ============================================ */
+
+.posts
+    padding: 40px 0 110px
+
+    .posts-content
+        width: 65%
+        margin: 0 auto 60px
+
+        h2
+            +heading-two()
+
+        p
+            +paragraph()
+
+    .card
+        border: 0
+
+        .card-body
+            padding-left: 0
+            padding-right: 0
+
+            .card-title
+                a
+                    color: $primaryColor
+                    display: block
+                    height: 51px
+                    overflow: hidden
+            .card-text
+                color: #687074
+
+            .card-more
+                color: $secondaryColor
+                font-weight: bold
+
+/* ============================================ *
+ * Start Styling the Testimonials Section
+ * ============================================ */
+
+.testimonials-slider
+    overflow: hidden
+    height: 550px
+    background-image: url("../images/testimonials/testimonials.jpg")
+    +background-size(cover)
+    background-position: 0 -280px
+
+    .carousel-inner
+        z-index: 2
+
+        .carousel-item
+            .carousel-caption
+                position: relative
+                right: 0
+                left: 0
+                bottom: 0
+
+                width: 50%
+                margin: auto
+
+                .testimonial-img
+                    width: 146px
+                    height: 146px
+                    overflow: hidden
+                    margin: 0 auto 20px
+
+                h5
+                    margin-bottom: 10px
+
+                h6
+                    margin-bottom: 40px
+
+
+    .carousel-control-prev, .carousel-control-next
+        width: 66px
+        height: 66px
+
+        top: calc(50% - 33px)
+        z-index: 2
+
+        opacity: 1
+        transition: all .3s ease-in-out
+        background-color: $blackColor
+
+        &:hover
+            background-color: $secondaryColor
+
+    .carousel-control-prev
+        left: 25px
+
+    .carousel-control-next
+        right: 25px

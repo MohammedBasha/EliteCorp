@@ -1,0 +1,29 @@
+/* ============================================ *
+ * Start Styling the Navigation Section
+ * ============================================ */
+
+.navbar
+    .navbar-brand
+        span
+            font-size: 2.5rem
+            &:first-child
+                color: $primaryColor
+                font-weight: bold
+            &:last-child
+                color: $secondaryColor
+
+    .navbar-nav
+        .nav-item
+            margin-left: 10px
+
+            &.active
+                .nav-link
+                    color: $secondaryColor
+
+            .nav-link
+                color: $primaryColor
+                transition: color .3s ease-in-out
+                font-size: .88rem
+
+                &:hover
+                    color: $secondaryColor
