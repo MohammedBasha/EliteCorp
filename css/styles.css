@@ -11784,8 +11784,9 @@ a, a:hover, a:focus {
  * * Start Styling the Navigation Section
  *
  * * ============================================ */
-.navbar .navbar-brand span {
+.navbar .navbar-brand {
   font-size: 2.5rem;
+  display: inline-block;
 }
 .navbar .navbar-brand span:first-child {
   color: #08526d;
@@ -12086,8 +12087,271 @@ a, a:hover, a:focus {
 
 /* ============================================ *
  *
+ * * Start Styling the Pricing Section
+ *
+ * * ============================================ */
+.pricings-wrapper {
+  padding: 105px 0;
+}
+.pricings-wrapper .pricings-content {
+  width: 65%;
+  margin: 0 auto 60px;
+}
+.pricings-wrapper .pricings-content h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.pricings-wrapper .pricings-content h2:last-child {
+  margin-bottom: 0;
+}
+.pricings-wrapper .pricings-content p {
+  color: #687074;
+  font-size: 1.2rem;
+}
+.pricings-wrapper .pricings-content p:last-child {
+  margin-bottom: 0;
+}
+.pricings-wrapper .card {
+  border: 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.pricings-wrapper .card:hover {
+  transform: translateY(-10px);
+}
+.pricings-wrapper .card:hover .card-body .card-price {
+  color: #fff;
+  background-color: #ec1c23;
+}
+.pricings-wrapper .card:hover .card-body .card-more {
+  background-color: #08526d;
+}
+.pricings-wrapper .card .card-body {
+  padding: 55px 0;
+}
+.pricings-wrapper .card .card-body .card-title {
+  color: #08526d;
+  height: 24px;
+  overflow: hidden;
+}
+.pricings-wrapper .card .card-body .card-subtitle {
+  margin-bottom: 30px;
+}
+.pricings-wrapper .card .card-body .card-price {
+  color: #08526d;
+  background-color: #f7f7f7;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 11px 0;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.pricings-wrapper .card .card-body .card-price span {
+  font-size: 1rem;
+}
+.pricings-wrapper .card .card-body .list-group .list-group-item {
+  border: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.pricings-wrapper .card .card-body .card-more {
+  color: #fff;
+  background-color: #ec1c23;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ============================================ *
+ *
+ * * Start Styling the Choose us Section
+ *
+ * * ============================================ */
+.choose-us .choose-img {
+  background-image: url("../images/choose-us.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: -190px 0;
+}
+.choose-us .choose-content {
+  padding: 110px 40px;
+  color: #fff;
+  background-color: #08526d;
+}
+.choose-us .choose-content h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.choose-us .choose-content h2:last-child {
+  margin-bottom: 0;
+}
+.choose-us .choose-content p {
+  color: #687074;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.choose-us .choose-content p:last-child {
+  margin-bottom: 0;
+}
+.choose-us .choose-content p:last-child {
+  margin-bottom: 40px;
+}
+.choose-us .choose-content .choose-more {
+  color: #fff;
+  background-color: #ec1c23;
+  font-size: 1.25rem;
+  display: inline-block;
+  padding: 15px;
+}
+
+/* ============================================ *
+ *
+ * * Start Styling the Features Section
+ *
+ * * ============================================ */
+.statistics {
+  padding: 100px 0;
+}
+.statistics .statistic i {
+  color: #08526d;
+  margin-bottom: 10px;
+}
+.statistics .statistic h5 {
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #08526d;
+  margin-bottom: 10px;
+}
+.statistics .statistic p {
+  color: #ec1c23;
+  font-style: italic;
+}
+
+/* ============================================ *
+ *
+ * * Start Styling the Home Contact us Section
+ *
+ * * ============================================ */
+.home-contact-wrapper {
+  background-color: #ec1c23;
+  padding: 75px 0;
+}
+.home-contact-wrapper .row {
+  justify-content: center;
+}
+.home-contact-wrapper .home-contact-content {
+  display: flex;
+  flex: 0 0 85%;
+  justify-content: space-between;
+}
+.home-contact-wrapper .home-contact-content span {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.home-contact-wrapper .home-contact-content a {
+  color: #fff;
+  background-color: #ec1c23;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+.home-contact-wrapper .home-contact-content a:hover {
+  background-color: #08526d;
+  border-color: #08526d;
+}
+
+/* ============================================ *
+ *
  * * Start Styling the Footer Section
  *
  * * ============================================ */
+footer {
+  background-color: #f7f7f7;
+}
+footer .footer-content {
+  padding: 120px 0;
+  border-bottom: 1px solid #a1a1a1;
+}
+footer .footer-content .footer-about .footer-logo {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+footer .footer-content .footer-about .footer-logo span:first-child {
+  color: #08526d;
+  font-weight: bold;
+}
+footer .footer-content .footer-about .footer-logo span:last-child {
+  color: #ec1c23;
+}
+footer .footer-content .footer-about .footer-about-content {
+  color: #687074;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+footer .footer-content .footer-about .footer-about-content:last-child {
+  margin-bottom: 0;
+}
+footer .footer-content .footer-about .footer-about-more {
+  color: #08526d;
+}
+footer .footer-content .footer-about .footer-about-more i {
+  margin-right: 5px;
+}
+footer .footer-content .footer-links-wrapper h3 {
+  font-size: 1.5rem;
+  color: #08526d;
+  margin-bottom: 70px;
+}
+footer .footer-content .footer-links-wrapper .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer-content .footer-links-wrapper .footer-links a {
+  flex: 0 0 50%;
+  color: #08526d;
+  margin-bottom: 10px;
+}
+footer .footer-content .footer-links-wrapper .footer-links a i {
+  margin-right: 5px;
+  color: #687074;
+}
+footer .footer-content .footer-contact h3 {
+  font-size: 1.5rem;
+  color: #08526d;
+  margin-bottom: 70px;
+}
+footer .footer-content .footer-contact p {
+  margin-bottom: 40px;
+}
+footer .footer-content .footer-contact p a {
+  color: #08526d;
+}
+footer .footer-copyright {
+  color: #687074;
+  padding: 30px 0;
+}
+footer .footer-copyright .row {
+  justify-content: space-between;
+}
+footer .footer-copyright .row .footer-social a {
+  color: #687074;
+  margin-right: 30px;
+}
+footer .footer-copyright .row .footer-social a:last-child {
+  margin-right: 0;
+}
 
 /*# sourceMappingURL=styles.css.map */

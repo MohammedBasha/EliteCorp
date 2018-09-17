@@ -1,3 +1,80 @@
 /* ============================================ *
  * Start Styling the Footer Section
  * ============================================ */
+
+footer
+    background-color: #f7f7f7
+
+    .footer-content
+        padding: 120px 0
+        border-bottom: 1px solid #a1a1a1
+
+        .footer-about
+            .footer-logo
+                font-size: 2.5rem
+                margin-bottom: 40px
+                display: inline-block
+
+                span
+                    &:first-child
+                        color: $primaryColor
+                        font-weight: bold
+
+                    &:last-child
+                        color: $secondaryColor
+
+            .footer-about-content
+                +paragraph()
+                margin-bottom: 10px
+
+            .footer-about-more
+                color: $primaryColor
+
+                i
+                    margin-right: 5px
+
+        .footer-links-wrapper
+            h3
+                font-size: 1.5rem
+                color: $primaryColor
+                margin-bottom: 70px
+
+            .footer-links
+                display: flex
+                flex-wrap: wrap
+
+                a
+                    flex: 0 0 50%
+                    color: $primaryColor
+                    margin-bottom: 10px
+
+                    i
+                        margin-right: 5px
+                        color: #687074
+
+        .footer-contact
+            h3
+                font-size: 1.5rem
+                color: $primaryColor
+                margin-bottom: 70px
+
+            p
+                margin-bottom: 40px
+
+                a
+                    color: $primaryColor
+
+    .footer-copyright
+        color: #687074
+        padding: 30px 0
+
+        .row
+            justify-content: space-between
+
+            .footer-social
+                a
+                    color: #687074
+                    margin-right: 30px
+
+                    &:last-child
+                        margin-right: 0

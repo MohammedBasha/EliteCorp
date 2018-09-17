@@ -170,6 +170,7 @@
                     display: block
                     height: 51px
                     overflow: hidden
+
             .card-text
                 color: #687074
 
@@ -233,3 +234,176 @@
 
     .carousel-control-next
         right: 25px
+
+/* ============================================ *
+ * Start Styling the Pricing Section
+ * ============================================ */
+
+.pricings-wrapper
+    padding: 105px 0
+
+    .pricings-content
+        width: 65%
+        margin: 0 auto 60px
+
+        h2
+            +heading-two()
+
+        p
+            +paragraph()
+
+    .card
+        border: 0
+        -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+        transition: all .3s ease-in-out
+
+        &:hover
+            transform: translateY(-10px)
+
+            .card-body
+                .card-price
+                    color: $whiteColor
+                    background-color: $secondaryColor
+
+                .card-more
+                    background-color: $primaryColor
+
+        .card-body
+            padding: 55px 0
+
+            .card-title
+                color: $primaryColor
+                height: 24px
+                overflow: hidden
+
+            .card-subtitle
+                margin-bottom: 30px
+
+            .card-price
+                color: $primaryColor
+                background-color: #f7f7f7
+
+                font-size: 2.5rem
+                font-weight: bold
+
+                padding: 11px 0
+                margin-bottom: 10px
+
+                transition: all .3s ease-in-out
+
+                span
+                    font-size: 1rem
+
+            .list-group
+                .list-group-item
+                    border: 0
+                    padding-top: 1.2rem
+                    padding-bottom: 1.2rem
+
+            .card-more
+                color: $whiteColor
+                background-color: $secondaryColor
+
+                font-size: 1.25rem
+                font-weight: bold
+
+                display: inline-block
+                padding: 15px 30px
+                margin-top: 20px
+
+                transition: all .3s ease-in-out
+
+/* ============================================ *
+ * Start Styling the Choose us Section
+ * ============================================ */
+
+.choose-us
+    .choose-img
+        background-image: url('../images/choose-us.jpg')
+        +background-size(cover)
+        background-position: -190px 0
+
+    .choose-content
+        padding: 110px 40px
+        color: $whiteColor
+        background-color: $primaryColor
+
+        h2
+            +heading-two()
+
+        p
+            +paragraph()
+            margin-bottom: 50px
+            color: $whiteColor
+
+            &:last-child
+                margin-bottom: 40px
+
+        .choose-more
+            color: $whiteColor
+            background-color: $secondaryColor
+
+            font-size: 1.25rem
+
+            display: inline-block
+            padding: 15px
+
+/* ============================================ *
+ * Start Styling the Features Section
+ * ============================================ */
+
+.statistics
+    padding: 100px 0
+
+    .statistic
+        i
+            color: $primaryColor
+            margin-bottom: 10px
+
+        h5
+            font-weight: bold
+            font-size: 2.3rem
+            color: $primaryColor
+            margin-bottom: 10px
+
+        p
+            color: $secondaryColor
+            font-style: italic
+
+/* ============================================ *
+ * Start Styling the Home Contact us Section
+ * ============================================ */
+
+.home-contact-wrapper
+    background-color: $secondaryColor
+    padding: 75px 0
+
+    .row
+        justify-content: center
+
+    .home-contact-content
+        display: flex
+        flex: 0 0 85%
+        justify-content: space-between
+
+        span
+            font-size: 1.7rem
+            color: $whiteColor
+
+        a
+            color: $whiteColor
+            background-color: $secondaryColor
+
+            font-size: 1.3rem
+            font-weight: bold
+
+            display: inline-block
+            padding: 5px 10px
+            border: 1px solid $whiteColor
+
+            transition: all .3s ease-in-out
+
+            &:hover
+                background-color: $primaryColor
+                border-color: $primaryColor
