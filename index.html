@@ -10,20 +10,26 @@
 
         <!-- Start Upper Bar -->
 
-        <div class="upper-bar text-uppercase">
+        <div class="upper-bar text-white-50 p-2 text-uppercase">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm upper-bar-info">
-                        <span>
-                            <i class="fa fa-phone" aria-hidden="true"></i> 000 123 456 789
+                        <span class="mr-2">
+                            <small>
+                                <i class="fa fa-phone mr-1 text-white" aria-hidden="true"></i> 000 123 456 789
+                            </small>
                         </span>
-                        <a href="mailto:name@email.com">
-                            <i class="fa fa-envelope" aria-hidden="true"></i> name@email.com
+                        <a href="mailto:name@email.com" class="text-white">
+                            <small>
+                                <i class="fa fa-envelope" aria-hidden="true"></i> name@email.com
+                            </small>
                         </a>
                     </div>
                     <div class="col-sm text-right upper-bar-quote">
-                        <span>lets work together!</span>
-                        <a href="#">get quote</a>
+                        <span><small>lets work together!</small></span>
+                        <a href="#" class="text-white px-3 py-1 d-inline-block">
+                            <small>get quote</small>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -35,29 +41,43 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <span>Elite</span><span>Corp</span>
-                </a>
+                <h1 class="mb-0">
+                    <a href="index.html" class="navbar-brand d-inline-block">
+                        <span class="h1 font-weight-bold">Elite</span><span class="h1">Corp</span>
+                    </a>
+                </h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="navbar-nav ml-auto text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#">
+                                <small>Contact</small>
+                            </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        <li class="nav-item ml-2 active">
+                            <a class="nav-link" href="#">
+                                <small>
+                                    About <span class="sr-only">(current)</span>
+                                </small>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#">
+                                <small>Contact</small>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#">
+                                <small>Contact</small>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#">
+                                <small>Contact</small>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -71,40 +91,40 @@
         <div id="main-slider" class="main-slider carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="dark-overlay"></div>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="dark-overlay position-absolute w-100 h-100"></div>
+                    <div class="carousel-caption position-absolute text-left d-none d-md-block">
                         <p>We're an Independent</p>
                         <p>Design &amp;
-                            <span class="highlighted">Development</span>
+                            <span class="highlighted p-1">Development</span>
                         </p>
                         <p>Agency.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="dark-overlay"></div>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="dark-overlay position-absolute w-100 h-100"></div>
+                    <div class="carousel-caption position-absolute text-left d-none d-md-block">
                         <p>We're an Independent</p>
                         <p>Development &amp;
-                            <span class="highlighted">Design</span>
+                            <span class="highlighted p-1">Design</span>
                         </p>
                         <p>Agency.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="dark-overlay"></div>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="dark-overlay position-absolute w-100 h-100"></div>
+                    <div class="carousel-caption position-absolute text-left d-none d-md-block">
                         <p>We're an Independent</p>
                         <p>Web &amp;
-                            <span class="highlighted">Solutions</span>
+                            <span class="highlighted p-1">Solutions</span>
                         </p>
                         <p>Agency.</p>
                     </div>
                 </div>
             </div>
             <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
+                <li data-target="#main-slider" data-slide-to="0" class="active rounded-circle border border-white"></li>
+                <li data-target="#main-slider" data-slide-to="1" class="rounded-circle border border-white"></li>
+                <li data-target="#main-slider" data-slide-to="2" class="rounded-circle border border-white"></li>
             </ol>
         </div>
 
@@ -116,24 +136,24 @@
             <div class="container">
                 <div class="row">
                     <div class="feature col-sm-6 col-lg">
-                        <i class="fa fa-lightbulb-o fa-2x rounded-circle" aria-hidden="true"></i>
+                        <i class="fa fa-lightbulb-o fa-2x rounded-circle mb-3 text-white" aria-hidden="true"></i>
                         <h5>Great Ideas</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
                     </div>
                     <div class="feature col-sm-6 col-lg">
-                        <i class="fa fa-gears fa-2x rounded-circle" aria-hidden="true"></i>
+                        <i class="fa fa-gears fa-2x rounded-circle mb-3 text-white" aria-hidden="true"></i>
                         <h5>Quick Settings</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
                     </div>
                     <div class="feature col-sm-6 col-lg">
-                        <i class="fa fa-cloud-download fa-2x rounded-circle" aria-hidden="true"></i>
+                        <i class="fa fa-cloud-download fa-2x rounded-circle mb-3 text-white" aria-hidden="true"></i>
                         <h5>Cloud Services</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
                     </div>
                     <div class="feature col-sm-6 col-lg">
-                        <i class="fa fa-bookmark fa-2x rounded-circle" aria-hidden="true"></i>
+                        <i class="fa fa-bookmark fa-2x rounded-circle mb-3 text-white" aria-hidden="true"></i>
                         <h5>Cross Development</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
             </div>
@@ -144,11 +164,11 @@
         <!-- Start Overview -->
 
         <section class="overview text-center">
-            <div class="overview-content">
+            <div class="overview-content m-auto">
                 <h2 class="text-uppercase">Company Overview</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
-                <h6 class="text-capitalize">let’s start today</h6>
-                <a href="#" class="text-uppercase">view more</a>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                <h6 class="h5 text-capitalize mb-5">let’s start today</h6>
+                <a href="#" class="text-uppercase font-weight-bold px-4 py-2 text-white d-inline-block">view more</a>
             </div>
         </section>
 
@@ -156,79 +176,91 @@
 
         <!-- Start Featured Work -->
 
-        <section class="featured-work text-center">
+        <section class="featured-work pb-5 text-center">
             <div class="container">
-                <div class="featured-work-content">
+                <div class="featured-work-content mx-auto">
                     <h2 class="text-capitalize">Featured Work</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
                 </div>
-                <div class="row featured-filter text-uppercase">
-                    <div class="col-md active" data-class="all">all</div>
-                    <div class="col-md" data-class=".website">website</div>
-                    <div class="col-md" data-class=".logo">logo and branding</div>
-                    <div class="col-md" data-class=".graphic">graphic design</div>
-                    <div class="col-md" data-class=".marketing">online marketing</div>
-                    <div class="col-md" data-class=".video">video</div>
+                <div class="row featured-filter mb-4 text-uppercase">
+                    <div class="col-md mr-2 active" data-class="all">
+                        <small class="font-weight-bold">all</small>
+                    </div>
+                    <div class="col-md mr-2" data-class=".website">
+                        <small class="font-weight-bold">website</small>
+                    </div>
+                    <div class="col-md mr-2" data-class=".logo">
+                        <small class="font-weight-bold">logo and branding</small>
+                    </div>
+                    <div class="col-md mr-2" data-class=".graphic">
+                        <small class="font-weight-bold">graphic design</small>
+                    </div>
+                    <div class="col-md mr-2" data-class=".marketing">
+                        <small class="font-weight-bold">online marketing</small>
+                    </div>
+                    <div class="col-md" data-class=".video">
+                        <small class="font-weight-bold">video</small>
+                    </div>
                 </div>
             </div>
             <div class="row no-gutters featured-images">
-                <div class="col-sm-6 col-md-3 featured-image logo">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>logo</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative logo">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">logo</h6>
                     </div>
-                    <img src="images/featured-work/featured-01.jpg" alt="featured-01">
+                    <img src="images/featured-work/featured-01.jpg" alt="featured-01" class="w-100">
                 </div>
-                <div class="col-sm-6 col-md-3 featured-image marketing">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>marketing</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative marketing">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">marketing</h6>
                     </div>
-                    <img src="images/featured-work/featured-02.jpg" alt="featured-02">
+                    <img src="images/featured-work/featured-02.jpg" alt="featured-02" class="w-100">
                 </div>
-                <div class="col-sm-6 col-md-3 featured-image video">
-                    <div class="featured-overlay text-uppercase website">
-                        <h5><a href="#">title</a></h5>
-                        <h6>video</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative video">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase website">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">video</h6>
                     </div>
-                    <img src="images/featured-work/featured-03.jpg" alt="featured-03">
+                    <img src="images/featured-work/featured-03.jpg" alt="featured-03" class="w-100">
                 </div>
-                <div class="col-sm-6 col-md-3 featured-image logo">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>branding</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative logo">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">branding</h6>
                     </div>
-                    <img src="images/featured-work/featured-04.jpg" alt="featured-04">
+                    <img src="images/featured-work/featured-04.jpg" alt="featured-04" class="w-100">
                 </div>
             </div>
             <div class="row no-gutters featured-images">
-                <div class="col-sm-6 col-md-3 featured-image website">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>website</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative website">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">website</h6>
                     </div>
-                    <img src="images/featured-work/featured-05.jpg" alt="featured-05">
+                    <img src="images/featured-work/featured-05.jpg" alt="featured-05" class="w-100">
                 </div>
-                <div class="col-sm-6 col-md-3 featured-image graphic">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>graphic</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative graphic">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">graphic</h6>
                     </div>
-                    <img src="images/featured-work/featured-06.jpg" alt="featured-06">
+                    <img src="images/featured-work/featured-06.jpg" alt="featured-06" class="w-100">
                 </div>
-                <div class="col-sm-6 col-md-3 featured-image website">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>website</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative website">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">website</h6>
                     </div>
-                    <img src="images/featured-work/featured-07.jpg" alt="featured-07">
+                    <img src="images/featured-work/featured-07.jpg" alt="featured-07" class="w-100">
                 </div>
-                <div class="col-sm-6 col-md-3 featured-image graphic">
-                    <div class="featured-overlay text-uppercase">
-                        <h5><a href="#">title</a></h5>
-                        <h6>graphic</h6>
+                <div class="col-sm-6 col-md-3 featured-image position-relative graphic">
+                    <div class="featured-overlay position-absolute w-100 h-100 d-flex flex-wrap align-content-center invisible text-uppercase">
+                        <h5 class="mb-2"><a href="#" class="d-inline-block h4 font-weight-bold">title</a></h5>
+                        <h6 class="text-white">graphic</h6>
                     </div>
-                    <img src="images/featured-work/featured-08.jpg" alt="featured-08">
+                    <img src="images/featured-work/featured-08.jpg" alt="featured-08" class="w-100">
                 </div>
             </div>
         </section>
@@ -237,49 +269,61 @@
 
         <!-- Start the Latest Posts -->
 
-        <section class="posts">
+        <section class="posts pt-5">
             <div class="container">
-                <div class="posts-content text-center">
+                <div class="posts-content mx-auto text-center">
                     <h2 class="text-capitalize">Latest Post</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
                 </div>
                 <div class="row post-cards">
                     <div class="col-sm-6 col-md">
-                        <div class="card">
+                        <div class="card border-0">
                             <a href="#" class="card-img-top">
                                 <img src="images/posts/post-01.jpg" class="w-100" alt="post-01">
                             </a>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Lorem Ipsum is simply dummy text ofthe printing and</a></h5>
+                            <div class="card-body px-0">
+                                <h5 class="card-title">
+                                    <a href="#" class="d-block">
+                                        Lorem Ipsum is simply dummy text ofthe printing and
+                                    </a>
+                                </h5>
                                 <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
-                                <a href="#" class="card-more">Read more</a>
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                                <a href="#" class="card-more font-weight-bold">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md">
-                        <div class="card">
+                        <div class="card border-0">
                             <a href="#" class="card-img-top">
                                 <img src="images/posts/post-02.jpg" class="w-100" alt="post-02">
                             </a>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Lorem Ipsum is simply dummy text ofthe printing and</a></h5>
+                            <div class="card-body px-0">
+                                <h5 class="card-title">
+                                    <a href="#" class="d-block">
+                                        Lorem Ipsum is simply dummy text ofthe printing and
+                                    </a>
+                                </h5>
                                 <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
-                                <a href="#" class="card-more">Read more</a>
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                                <a href="#" class="card-more font-weight-bold">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md">
-                        <div class="card">
+                        <div class="card border-0">
                             <a href="#" class="card-img-top">
                                 <img src="images/posts/post-03.jpg" class="w-100" alt="post-03">
                             </a>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Lorem Ipsum is simply dummy text ofthe printing and</a></h5>
+                            <div class="card-body px-0">
+                                <h5 class="card-title">
+                                    <a href="#" class="d-block">
+                                        Lorem Ipsum is simply dummy text ofthe printing and
+                                    </a>
+                                </h5>
                                 <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
-                                <a href="#" class="card-more">Read more</a>
+                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                                <a href="#" class="card-more font-weight-bold">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -292,57 +336,57 @@
         <!-- Start Testimonials Slider -->
 
         <div id="testimonials-slider" class="testimonials-slider carousel slide" data-ride="carousel">
-            <div class="dark-overlay"></div>
+            <div class="dark-overlay position-absolute w-100 h-100"></div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="carousel-caption d-block">
-                        <div class="testimonial-img rounded-circle">
+                    <div class="carousel-caption m-auto position-relative w-50 d-block">
+                        <div class="testimonial-img mx-auto mb-4 rounded-circle">
                             <img src="images/testimonials/testimonial-01.png" alt="testimonial-01">
                         </div>
-                        <h5 class="text-uppercase">james jonathan</h5>
-                        <h6 class="text-uppercase">Company CEO</h6>
+                        <h5 class="text-uppercase mb-2">james jonathan</h5>
+                        <h6 class="text-uppercase mb-5">Company CEO</h6>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nq
                         </p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-caption d-block">
-                        <div class="testimonial-img rounded-circle">
+                    <div class="carousel-caption m-auto position-relative w-50 d-block">
+                        <div class="testimonial-img mx-auto mb-4 rounded-circle">
                             <img src="images/testimonials/testimonial-01.png" alt="testimonial-01">
                         </div>
-                        <h5 class="text-uppercase">james jonathan</h5>
-                        <h6 class="text-uppercase">Company CEO</h6>
+                        <h5 class="text-uppercase mb-2">james jonathan</h5>
+                        <h6 class="text-uppercase mb-5">Company CEO</h6>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nq
                         </p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-caption d-block">
-                        <div class="testimonial-img rounded-circle">
+                    <div class="carousel-caption m-auto position-relative w-50 d-block">
+                        <div class="testimonial-img mx-auto mb-4 rounded-circle">
                             <img src="images/testimonials/testimonial-01.png" alt="testimonial-01">
                         </div>
-                        <h5 class="text-uppercase">james jonathan</h5>
-                        <h6 class="text-uppercase">Company CEO</h6>
+                        <h5 class="text-uppercase mb-2">james jonathan</h5>
+                        <h6 class="text-uppercase mb-5">Company CEO</h6>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nq
                         </p>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#testimonials-slider" role="button" data-slide="prev">
+            <a class="carousel-control-prev bg-dark" href="#testimonials-slider" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#testimonials-slider" role="button" data-slide="next">
+            <a class="carousel-control-next bg-dark" href="#testimonials-slider" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
             <ol class="carousel-indicators">
-                <li data-target="#testimonials-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#testimonials-slider" data-slide-to="1"></li>
-                <li data-target="#testimonials-slider" data-slide-to="2"></li>
+                <li data-target="#testimonials-slider" data-slide-to="0" class="active rounded-circle border border-white"></li>
+                <li data-target="#testimonials-slider" data-slide-to="1" class="rounded-circle border border-white"></li>
+                <li data-target="#testimonials-slider" data-slide-to="2" class="rounded-circle border border-white"></li>
             </ol>
         </div>
 
@@ -352,59 +396,59 @@
 
         <section class="pricings-wrapper">
             <div class="container">
-                <div class="pricings-content text-center">
+                <div class="pricings-content mx-auto text-center">
                     <h2 class="text-capitalize">Pricing Table</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
                 </div>
                 <div class="row pricings">
                     <div class="col-sm-6 col-md">
-                        <div class="card">
-                            <div class="card-body text-center">
+                        <div class="card border-0">
+                            <div class="card-body py-5 text-center">
                                 <h5 class="card-title text-capitalize">Small Business</h5>
-                                <h6 class="card-subtitle text-muted text-capitalize">Lorem Ipsum</h6>
-                                <h4 class="card-price text-uppercase">&#x00024;99&#x0002F;<span>year</span></h4>
+                                <h6 class="card-subtitle mb-4 text-muted text-capitalize">Lorem Ipsum</h6>
+                                <h4 class="card-price font-weight-bold h1 py-2 mb-2 text-uppercase">&#x00024;99&#x0002F;<span class="h6">year</span></h4>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
                                 </ul>
-                                <a href="#" class="card-more text-uppercase">buy now</a>
+                                <a href="#" class="card-more font-weight-bold h5 px-4 py-3 mt-4 mb-0 text-uppercase text-white d-inline-block">buy now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md">
-                        <div class="card">
-                            <div class="card-body text-center">
+                        <div class="card border-0">
+                            <div class="card-body py-5 text-center">
                                 <h5 class="card-title text-capitalize">Small Business</h5>
-                                <h6 class="card-subtitle text-muted text-capitalize">Lorem Ipsum</h6>
-                                <h4 class="card-price text-uppercase">&#x00024;199&#x0002F;<span>year</span></h4>
+                                <h6 class="card-subtitle mb-4 text-muted text-capitalize">Lorem Ipsum</h6>
+                                <h4 class="card-price font-weight-bold h1 py-2 mb-2 text-uppercase">&#x00024;199&#x0002F;<span class="h6">year</span></h4>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
                                 </ul>
-                                <a href="#" class="card-more text-uppercase">buy now</a>
+                                <a href="#" class="card-more font-weight-bold h5 px-4 py-3 mt-4 mb-0 text-uppercase text-white d-inline-block">buy now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md">
-                        <div class="card">
-                            <div class="card-body text-center">
+                        <div class="card border-0">
+                            <div class="card-body py-5 text-center">
                                 <h5 class="card-title text-capitalize">Small Business</h5>
-                                <h6 class="card-subtitle text-muted text-capitalize">Lorem Ipsum</h6>
-                                <h4 class="card-price text-uppercase">&#x00024;299&#x0002F;<span>year</span></h4>
+                                <h6 class="card-subtitle mb-4 text-muted text-capitalize">Lorem Ipsum</h6>
+                                <h4 class="card-price font-weight-bold h1 py-2 mb-2 text-uppercase">&#x00024;299&#x0002F;<span class="h6">year</span></h4>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
-                                    <li class="list-group-item">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
+                                    <li class="list-group-item border-0 py-3">Lorem Ipsum</li>
                                 </ul>
-                                <a href="#" class="card-more text-uppercase">buy now</a>
+                                <a href="#" class="card-more font-weight-bold h5 px-4 py-3 mt-4 mb-0 text-uppercase text-white d-inline-block">buy now</a>
                             </div>
                         </div>
                     </div>
@@ -420,15 +464,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md choose-img"></div>
-                    <div class="col-md choose-content">
+                    <div class="col-md choose-content text-white">
                         <h2 class="text-capitalize">why choose us</h2>
-                        <p>
+                        <p class="mb-5">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
                         </p>
-                        <p>
+                        <p class="mb-5">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
                         </p>
-                        <a href="#" class="choose-more text-uppercase">view more</a>
+                        <a href="#" class="choose-more h5 mb-0 p-3 text-uppercase text-white d-inline-block">view more</a>
                     </div>
                 </div>
             </div>
@@ -442,24 +486,24 @@
             <div class="container">
                 <div class="row">
                     <div class="statistic col-sm-6 col-lg">
-                        <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
-                        <h5>624</h5>
-                        <p class="text-uppercase">happy clients</p>
+                        <i class="fa fa-user-circle-o fa-4x mb-2" aria-hidden="true"></i>
+                        <h5 class="h1 font-weight-bold mb-2">624</h5>
+                        <p class="font-italic text-uppercase">happy clients</p>
                     </div>
                     <div class="statistic col-sm-6 col-lg">
-                        <i class="fa fa-bus fa-4x" aria-hidden="true"></i>
-                        <h5>112</h5>
-                        <p class="text-uppercase">amazing tours</p>
+                        <i class="fa fa-bus fa-4x mb-2" aria-hidden="true"></i>
+                        <h5 class="h1 font-weight-bold mb-2">112</h5>
+                        <p class="font-italic text-uppercase">amazing tours</p>
                     </div>
                     <div class="statistic col-sm-6 col-lg">
-                        <i class="fa fa-briefcase fa-4x" aria-hidden="true"></i>
-                        <h5>595</h5>
-                        <p class="text-uppercase">partners</p>
+                        <i class="fa fa-briefcase fa-4x mb-2" aria-hidden="true"></i>
+                        <h5 class="h1 font-weight-bold mb-2">595</h5>
+                        <p class="font-italic text-uppercase">partners</p>
                     </div>
                     <div class="statistic col-sm-6 col-lg">
-                        <i class="fa fa-comment fa-4x" aria-hidden="true"></i>
-                        <h5>09</h5>
-                        <p class="text-uppercase">questions answered</p>
+                        <i class="fa fa-comment fa-4x mb-2" aria-hidden="true"></i>
+                        <h5 class="h1 font-weight-bold mb-2">09</h5>
+                        <p class="font-italic text-uppercase">questions answered</p>
                     </div>
                 </div>
             </div>
@@ -471,10 +515,10 @@
 
         <section class="home-contact-wrapper">
             <div class="container">
-                <div class="row">
-                    <div class="home-contact-content">
-                        <span>You think we're cool? let's work together</span>
-                        <a href="#" class="text-uppercase">contact us</a>
+                <div class="row justify-content-center">
+                    <div class="home-contact-content d-flex justify-content-between flex-grow-0 flex-shrink-0">
+                        <span class="h2 mb-0 text-white">You think we're cool? let's work together</span>
+                        <a href="#" class="text-uppercase font-weight-bold h5 mb-0 px-2 py-1 text-white d-inline-block border border-white">contact us</a>
                     </div>
                 </div>
             </div>
@@ -484,85 +528,85 @@
 
         <!-- Start Footer Section -->
 
-        <footer>
-            <section class="footer-content">
+        <footer class="bg-light">
+            <section class="footer-content border-bottom border-secondary">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 footer-about">
-                            <a class="footer-logo" href="#">
-                                <span>Elite</span><span>Corp</span>
+                            <a class="footer-logo h1 mb-5 d-inline-block" href="index.html">
+                                <span class="font-weight-bold">Elite</span><span>Corp</span>
                             </a>
-                            <p class="footer-about-content">
+                            <p class="footer-about-content text-muted">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
                             </p>
                             <a href="#" class="footer-about-more">
-                                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>Read more
+                                <i class="fa fa-chevron-circle-right mr-1" aria-hidden="true"></i>Read more
                             </a>
                         </div>
                         <div class="col-md-3 footer-links-wrapper">
-                            <h3 class="text-capitalize">Helpful Links</h3>
-                            <div class="footer-links">
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>About
+                            <h3 class="text-capitalize h4">Helpful Links</h3>
+                            <div class="footer-links d-flex flex-wrap">
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>About
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>FAQ
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>FAQ
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Portfolio
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Portfolio
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Blog
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Blog
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Team
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Team
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>How It Works
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>How It Works
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Pricing
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Pricing
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Benefits
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Benefits
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Privacy Policy
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Privacy Policy
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>Contact
+                                <a href="#" class="mb-2 flex-grow-0 flex-shrink-0">
+                                    <i class="fa fa-chevron-right mr-1 text-muted" aria-hidden="true"></i>Contact
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 footer-contact">
-                            <h3 class="text-capitalize">Contact Us</h3>
-                            <p>54958 Levo Road Near Red Fort, U.S</p>
-                            <p>Phone: <a href="tel:+201212345678">012-12345678</a></p>
-                            <p>Email: <a href="mailto:info@elitecorp.com">info@elitecorp.com</a></p>
+                            <h3 class="text-capitalize h4">Contact Us</h3>
+                            <p class="mb-4 text-muted">54958 Levo Road Near Red Fort, U.S</p>
+                            <p class="mb-4 text-muted">Phone: <a href="tel:+201212345678">012-12345678</a></p>
+                            <p class="mb-4 text-muted">Email: <a href="mailto:info@elitecorp.com">info@elitecorp.com</a></p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="footer-copyright">
+            <section class="footer-copyright text-muted py-4">
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-between">
                         <div class="copyright-content text-uppercase">
                             COPYRIGHT 2017 ELITECORP &#x0007C; ALL RIGHTS RESERVED
                         </div>
                         <div class="footer-social">
-                            <a href="#" target="_blank">
+                            <a href="#" class="mr-4 text-muted" target="_blank">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="#" class="mr-4 text-muted" target="_blank">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="#" class="mr-4 text-muted" target="_blank">
                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="#" class="mr-4 text-muted" target="_blank">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="#" class="text-muted" target="_blank">
                                 <i class="fa fa-pinterest" aria-hidden="true"></i>
                             </a>
                         </div>

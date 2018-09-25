@@ -3,19 +3,18 @@
  * ============================================ */
 
 =heading-two()
-    font-size: 3rem
-    margin-bottom: 40px
-    font-weight: bold
+    @extend .display-4
+    @extend .mb-5
+    @extend .font-weight-bold
 
     &:last-child
-        margin-bottom: 0
+        @extend .mb-0
 
 =paragraph()
-    color: #687074
-    font-size: 1.2rem
+    font-size: 1.13rem
 
     &:last-child
-        margin-bottom: 0
+        @extend .mb-0
 
 /* ============================================ *
  * Backgrounds

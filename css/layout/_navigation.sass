@@ -4,29 +4,22 @@
 
 .navbar
     .navbar-brand
-        font-size: 2.5rem
-        display: inline-block
-
         span
             &:first-child
                 color: $primaryColor
-                font-weight: bold
                 
             &:last-child
                 color: $secondaryColor
 
     .navbar-nav
         .nav-item
-            margin-left: 10px
-
             &.active
                 .nav-link
                     color: $secondaryColor
-
+                    
             .nav-link
                 color: $primaryColor
                 transition: color .3s ease-in-out
-                font-size: .88rem
-
+                    
                 &:hover
                     color: $secondaryColor

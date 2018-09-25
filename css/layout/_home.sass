@@ -8,32 +8,28 @@
 
 .main-slider
     overflow: hidden
-
+    
     .carousel-item
         +background-size(cover)
-
+            
         &:nth-child(1)
             background-image: url('../images/slider/slider-1.jpg')
-
+        
         &:nth-child(2)
             background-image: url('../images/slider/slider-2.jpg')
-
+        
         &:nth-child(3)
             background-image: url('../images/slider/slider-3.jpg')
-
+        
     .carousel-caption
         +heading-two()
-
-        text-align: left
-        position: absolute
+        
         top: 20%
         left: 10%
         z-index: 2
-
+        
         .highlighted
             background-color: $secondaryColor
-            padding: 3px 5px
-
 
 /* ============================================ *
  * Start Styling the Features Section
@@ -45,17 +41,12 @@
     .feature
         i
             background-color: $secondaryColor
-            color: $whiteColor
             width: 60px
             height: 60px
             line-height: 60px
-            margin-bottom: 15px
-
+            
         h4
             color: $primaryColor
-
-        p
-            color: #687074
 
 /* ============================================ *
  * Start Styling the Overview Section
@@ -67,38 +58,29 @@
 
     .overview-content
         width: 60%
-        margin: auto
-
+        
         h2
             +heading-two()
-
+            
         p
             +paragraph()
-            margin-bottom: 30px
-
+            
         h6
-            font-size: 1.2rem
-            margin-bottom: 45px
             letter-spacing: 2px
-
+            
         a
-            display: inline-block
             background-color: $secondaryColor
-            color: $whiteColor
-            padding: 10px 30px
-            font-weight: bold
-
 
 /* ============================================ *
  * Start Styling the Featured Work Section
  * ============================================ */
 
 .featured-work
-    padding: 80px 0 40px
+    padding-top: 80px
 
     .featured-work-content
         width: 65%
-        margin: 0 auto 60px
+        margin-bottom: 60px
 
         h2
             +heading-two()
@@ -107,49 +89,36 @@
             +paragraph()
 
     .featured-filter
-        margin-bottom: 30px
-
         & > div
-            font-size: .8rem
-            font-weight: bold
             color: $primaryColor
             line-height: 2.9rem
-
+            letter-spacing: .7px
+            
             border: 1px solid $primaryColor
-            margin-right: 10px
 
             cursor: pointer
             transition: all .3s ease-in-out
-
-            &:last-child
-                margin-right: 0
-
+            
             &.active, &:hover
                 background-color: $secondaryColor
                 border-color: $secondaryColor
-                color: $whiteColor
+                @extend .text-white
 
     .featured-image
-        position: relative
-        transition: all .3s ease-in-out
-
         &:hover
             .featured-overlay
-                visibility: visible
-
-        img
-            width: 100%
+                @extend .visible
 
 /* ============================================ *
  * Start Styling the Latest Posts Section
  * ============================================ */
 
 .posts
-    padding: 40px 0 110px
+    padding-bottom: 110px
 
     .posts-content
         width: 65%
-        margin: 0 auto 60px
+        margin-bottom: 60px
 
         h2
             +heading-two()
@@ -158,25 +127,15 @@
             +paragraph()
 
     .card
-        border: 0
-
         .card-body
-            padding-left: 0
-            padding-right: 0
-
             .card-title
                 a
                     color: $primaryColor
-                    display: block
                     height: 51px
                     overflow: hidden
-
-            .card-text
-                color: #687074
-
+                    
             .card-more
                 color: $secondaryColor
-                font-weight: bold
 
 /* ============================================ *
  * Start Styling the Testimonials Section
@@ -194,26 +153,14 @@
 
         .carousel-item
             .carousel-caption
-                position: relative
                 right: 0
                 left: 0
                 bottom: 0
-
-                width: 50%
-                margin: auto
 
                 .testimonial-img
                     width: 146px
                     height: 146px
                     overflow: hidden
-                    margin: 0 auto 20px
-
-                h5
-                    margin-bottom: 10px
-
-                h6
-                    margin-bottom: 40px
-
 
     .carousel-control-prev, .carousel-control-next
         width: 66px
@@ -223,11 +170,10 @@
         z-index: 2
 
         opacity: 1
-        transition: all .3s ease-in-out
-        background-color: $blackColor
+        transition: background-color .3s ease-in-out
 
         &:hover
-            background-color: $secondaryColor
+            background-color: $secondaryColor !important
 
     .carousel-control-prev
         left: 25px
@@ -241,10 +187,10 @@
 
 .pricings-wrapper
     padding: 105px 0
-
+    
     .pricings-content
         width: 65%
-        margin: 0 auto 60px
+        margin-bottom: 60px
 
         h2
             +heading-two()
@@ -253,66 +199,35 @@
             +paragraph()
 
     .card
-        border: 0
         -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
         box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
-        transition: all .3s ease-in-out
-
+        transition: transform .3s ease-in-out
+        
         &:hover
             transform: translateY(-10px)
-
+        
             .card-body
                 .card-price
-                    color: $whiteColor
+                    @extend .text-white
                     background-color: $secondaryColor
-
+                
                 .card-more
                     background-color: $primaryColor
-
+                    
         .card-body
-            padding: 55px 0
-
             .card-title
                 color: $primaryColor
                 height: 24px
                 overflow: hidden
-
-            .card-subtitle
-                margin-bottom: 30px
-
+                
             .card-price
                 color: $primaryColor
-                background-color: #f7f7f7
-
-                font-size: 2.5rem
-                font-weight: bold
-
-                padding: 11px 0
-                margin-bottom: 10px
-
+                background-color: #f7f7f7                
                 transition: all .3s ease-in-out
-
-                span
-                    font-size: 1rem
-
-            .list-group
-                .list-group-item
-                    border: 0
-                    padding-top: 1.2rem
-                    padding-bottom: 1.2rem
-
+                    
             .card-more
-                color: $whiteColor
                 background-color: $secondaryColor
-
-                font-size: 1.25rem
-                font-weight: bold
-
-                display: inline-block
-                padding: 15px 30px
-                margin-top: 20px
-
-                transition: all .3s ease-in-out
+                transition: background-color .3s ease-in-out
 
 /* ============================================ *
  * Start Styling the Choose us Section
@@ -326,7 +241,6 @@
 
     .choose-content
         padding: 110px 40px
-        color: $whiteColor
         background-color: $primaryColor
 
         h2
@@ -334,20 +248,9 @@
 
         p
             +paragraph()
-            margin-bottom: 50px
-            color: $whiteColor
-
-            &:last-child
-                margin-bottom: 40px
 
         .choose-more
-            color: $whiteColor
             background-color: $secondaryColor
-
-            font-size: 1.25rem
-
-            display: inline-block
-            padding: 15px
 
 /* ============================================ *
  * Start Styling the Features Section
@@ -359,17 +262,12 @@
     .statistic
         i
             color: $primaryColor
-            margin-bottom: 10px
-
+            
         h5
-            font-weight: bold
-            font-size: 2.3rem
             color: $primaryColor
-            margin-bottom: 10px
-
+            
         p
             color: $secondaryColor
-            font-style: italic
 
 /* ============================================ *
  * Start Styling the Home Contact us Section
@@ -379,31 +277,13 @@
     background-color: $secondaryColor
     padding: 75px 0
 
-    .row
-        justify-content: center
-
     .home-contact-content
-        display: flex
-        flex: 0 0 85%
-        justify-content: space-between
-
-        span
-            font-size: 1.7rem
-            color: $whiteColor
+        flex-basis: 85%
 
         a
-            color: $whiteColor
             background-color: $secondaryColor
-
-            font-size: 1.3rem
-            font-weight: bold
-
-            display: inline-block
-            padding: 5px 10px
-            border: 1px solid $whiteColor
-
             transition: all .3s ease-in-out
 
             &:hover
                 background-color: $primaryColor
-                border-color: $primaryColor
+                border-color: $primaryColor !important

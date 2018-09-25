@@ -6,53 +6,30 @@ a, a:hover, a:focus
     text-decoration: none
 
 .dark-overlay
-    position: absolute
     top: 0
     left: 0
     z-index: 1
-    width: 100%
-    height: 100%
     background-color: rgba($blackColor, .6)
 
 .featured-overlay
-    position: absolute
     top: 0
     left: 0
     z-index: 1
-
-    width: 100%
-    height: 100%
     background-color: rgba($primaryColor, .6)
-
-    display: flex
-    flex-wrap: wrap
-    align-content: center
-
-    visibility: hidden
 
     h5
         flex: 0 0 100%
-        margin-bottom: 10px
 
         a
-            display: inline-block
-            font-size: 1.5rem
             line-height: 1.5rem
             color: $secondaryColor
-            font-weight: 700
             letter-spacing: 2px
 
     h6
         flex: 0 0 100%
-        color: $whiteColor
 
 .carousel-indicators
     li
-        &.active
-            background-color: $whiteColor
-
         width: 15px
         height: 15px
-        border-radius: 50%
         background-color: transparent
-        border: 1px solid $whiteColor
