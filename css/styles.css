@@ -416,7 +416,7 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-.display-4, .choose-us .choose-content h2, .pricings-wrapper .pricings-content h2, .posts .posts-content h2, .featured-work .featured-work-content h2, .overview .overview-content h2, .main-slider .carousel-caption {
+.display-4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
@@ -11793,9 +11793,20 @@ a, a:hover, a:focus {
   background-image: url("../images/slider/slider-3.jpg");
 }
 .main-slider .carousel-caption {
+  font-size: 1.5rem;
   top: 20%;
   left: 10%;
   z-index: 2;
+}
+@media (min-width: 768px) {
+  .main-slider .carousel-caption {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .main-slider .carousel-caption {
+    font-size: 3.5rem;
+  }
 }
 .main-slider .carousel-caption .highlighted {
   background-color: #ec1c23;
@@ -11807,7 +11818,12 @@ a, a:hover, a:focus {
  *
  * * ============================================ */
 .features {
-  padding: 100px 0 120px;
+  padding: 100px 0;
+}
+@media (min-width: 992px) {
+  .features {
+    padding: 100px 0 120px;
+  }
 }
 .features .feature i {
   background-color: #ec1c23;
@@ -11831,6 +11847,20 @@ a, a:hover, a:focus {
 .overview .overview-content {
   width: 60%;
 }
+.overview .overview-content h2 {
+  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .overview .overview-content h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .overview .overview-content h2 {
+    font-size: 3.5rem;
+  }
+}
 .overview .overview-content p {
   font-size: 1.13rem;
 }
@@ -11853,6 +11883,19 @@ a, a:hover, a:focus {
   width: 65%;
   margin-bottom: 60px;
 }
+.featured-work .featured-work-content h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .featured-work .featured-work-content h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .featured-work .featured-work-content h2 {
+    font-size: 3.5rem;
+  }
+}
 .featured-work .featured-work-content p {
   font-size: 1.13rem;
 }
@@ -11868,6 +11911,18 @@ a, a:hover, a:focus {
   background-color: #ec1c23;
   border-color: #ec1c23;
 }
+@media (min-width: 768px) {
+  .featured-work .featured-filter > div:nth-child(3n+2) {
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .featured-work .featured-filter > div:nth-child(3n+2) {
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+}
 /* ============================================ *
  *
  * * Start Styling the Latest Posts Section
@@ -11879,6 +11934,19 @@ a, a:hover, a:focus {
 .posts .posts-content {
   width: 65%;
   margin-bottom: 60px;
+}
+.posts .posts-content h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .posts .posts-content h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .posts .posts-content h2 {
+    font-size: 3.5rem;
+  }
 }
 .posts .posts-content p {
   font-size: 1.13rem;
@@ -11905,7 +11973,11 @@ a, a:hover, a:focus {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0 -280px;
+}
+@media (min-width: 1200px) {
+  .testimonials-slider {
+    background-position: 0 -280px;
+  }
 }
 .testimonials-slider .carousel-inner {
   z-index: 2;
@@ -11914,6 +11986,11 @@ a, a:hover, a:focus {
   right: 0;
   left: 0;
   bottom: 0;
+}
+@media (min-width: 992px) {
+  .testimonials-slider .carousel-inner .carousel-item .carousel-caption {
+    width: 50% !important;
+  }
 }
 .testimonials-slider .carousel-inner .carousel-item .carousel-caption .testimonial-img {
   width: 146px;
@@ -11950,6 +12027,19 @@ a, a:hover, a:focus {
   width: 65%;
   margin-bottom: 60px;
 }
+.pricings-wrapper .pricings-content h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .pricings-wrapper .pricings-content h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .pricings-wrapper .pricings-content h2 {
+    font-size: 3.5rem;
+  }
+}
 .pricings-wrapper .pricings-content p {
   font-size: 1.13rem;
 }
@@ -11958,8 +12048,10 @@ a, a:hover, a:focus {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
-.pricings-wrapper .card:hover {
-  transform: translateY(-10px);
+@media (min-width: 576px) {
+  .pricings-wrapper .card:hover {
+    transform: translateY(-10px);
+  }
 }
 .pricings-wrapper .card:hover .card-body .card-price {
   background-color: #ec1c23;
@@ -11999,6 +12091,19 @@ a, a:hover, a:focus {
   padding: 110px 40px;
   background-color: #08526d;
 }
+.choose-us .choose-content h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .choose-us .choose-content h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .choose-us .choose-content h2 {
+    font-size: 3.5rem;
+  }
+}
 .choose-us .choose-content p {
   font-size: 1.13rem;
 }
@@ -12012,7 +12117,7 @@ a, a:hover, a:focus {
  *
  * * ============================================ */
 .statistics {
-  padding: 100px 0;
+  padding: 100px 0 90px;
 }
 .statistics .statistic i {
   color: #08526d;
@@ -12051,7 +12156,12 @@ a, a:hover, a:focus {
  *
  * * ============================================ */
 footer .footer-content {
-  padding: 120px 0;
+  padding: 70px 0;
+}
+@media (min-width: 768px) {
+  footer .footer-content {
+    padding: 120px 0 70px;
+  }
 }
 footer .footer-content .footer-about .footer-logo span:first-child {
   color: #08526d;
@@ -12067,7 +12177,11 @@ footer .footer-content .footer-about .footer-about-more {
 }
 footer .footer-content .footer-links-wrapper h3 {
   color: #08526d;
-  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  footer .footer-content .footer-links-wrapper h3 {
+    margin-bottom: 70px !important;
+  }
 }
 footer .footer-content .footer-links-wrapper .footer-links a {
   flex-basis: 50%;
@@ -12075,7 +12189,11 @@ footer .footer-content .footer-links-wrapper .footer-links a {
 }
 footer .footer-content .footer-contact h3 {
   color: #08526d;
-  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  footer .footer-content .footer-contact h3 {
+    margin-bottom: 70px !important;
+  }
 }
 footer .footer-content .footer-contact a {
   color: #08526d;

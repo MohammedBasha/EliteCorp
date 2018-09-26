@@ -36,7 +36,10 @@
  * ============================================ */
 
 .features
-    padding: 100px 0 120px
+    padding: 100px 0
+    
+    +media-breakpoint-up(lg)
+        padding: 100px 0 120px
 
     .feature
         i
@@ -61,6 +64,8 @@
         
         h2
             +heading-two()
+            
+            font-size: 1.4rem
             
         p
             +paragraph()
@@ -93,9 +98,7 @@
             color: $primaryColor
             line-height: 2.9rem
             letter-spacing: .7px
-            
             border: 1px solid $primaryColor
-
             cursor: pointer
             transition: all .3s ease-in-out
             
@@ -103,6 +106,16 @@
                 background-color: $secondaryColor
                 border-color: $secondaryColor
                 @extend .text-white
+                
+            +media-breakpoint-up(md)
+                &:nth-child(3n+2)
+                    border-left-width: 0
+                    border-right-width: 0
+            
+            +media-breakpoint-up(xl)
+                &:nth-child(3n+2)
+                    border-left-width: 1px
+                    border-right-width: 1px
 
     .featured-image
         &:hover
@@ -145,8 +158,11 @@
     overflow: hidden
     height: 550px
     background-image: url("../images/testimonials/testimonials.jpg")
+    
     +background-size(cover)
-    background-position: 0 -280px
+    
+    +media-breakpoint-up(xl)
+        background-position: 0 -280px
 
     .carousel-inner
         z-index: 2
@@ -156,6 +172,9 @@
                 right: 0
                 left: 0
                 bottom: 0
+                
+                +media-breakpoint-up(lg)
+                    width: 50% !important
 
                 .testimonial-img
                     width: 146px
@@ -204,7 +223,8 @@
         transition: transform .3s ease-in-out
         
         &:hover
-            transform: translateY(-10px)
+            +media-breakpoint-up(sm)
+                transform: translateY(-10px)
         
             .card-body
                 .card-price
@@ -257,7 +277,7 @@
  * ============================================ */
 
 .statistics
-    padding: 100px 0
+    padding: 100px 0 90px
 
     .statistic
         i

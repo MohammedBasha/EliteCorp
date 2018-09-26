@@ -4,7 +4,10 @@
 
 footer
     .footer-content
-        padding: 120px 0
+        padding: 70px 0
+        
+        +media-breakpoint-up(md)
+            padding: 120px 0 70px
 
         .footer-about
             .footer-logo
@@ -24,7 +27,9 @@ footer
         .footer-links-wrapper
             h3
                 color: $primaryColor
-                margin-bottom: 70px
+                
+                +media-breakpoint-up(md)
+                    margin-bottom: 70px !important
 
             .footer-links
                 a
@@ -34,7 +39,9 @@ footer
         .footer-contact
             h3
                 color: $primaryColor
-                margin-bottom: 70px
+                
+                +media-breakpoint-up(md)
+                    margin-bottom: 70px !important
                 
             a
                 color: $primaryColor

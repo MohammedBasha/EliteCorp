@@ -3,9 +3,15 @@
  * ============================================ */
 
 =heading-two()
-    @extend .display-4
+    font-size: 1.5rem
     @extend .mb-5
     @extend .font-weight-bold
+    
+    +media-breakpoint-up(md)
+        font-size: 2.5rem
+    
+    +media-breakpoint-up(lg)
+        font-size: 3.5rem
 
     &:last-child
         @extend .mb-0
